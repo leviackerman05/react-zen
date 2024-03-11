@@ -1,23 +1,20 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 
-const parent = React.createElement("div", { id: "parent" }, [
-  React.createElement("div", { id: "child1" }, [
-    React.createElement("h1", {}, "I'm an H1 tag"),
-    React.createElement("h2", {}, "I'm an H2 tag"),
-  ]),
-  React.createElement("div", { id: "child2" }, [
-    React.createElement("h1", {}, "I'm an H1 tag"),
-    React.createElement("h2", {}, "I'm an H2 tag"),
-  ]),
-]);
+const Title = () => {
+  return <h1>Namaste React from a functional Component</h1>;
+};
+const text = <h3>This is a normal text from a react element</h3>;
+const HeaderComponent = () => {
+  return (
+    <div>
+      <Title />
+      <h2>{console.log("HeHe")}</h2>
+      <h2>This is also from a functional Component</h2>
+      {text}
+    </div>
+  );
+};
 
-const heading = React.createElement(
-  "h1",
-  { id: "heading" },
-  "Hello world from React!"
-);
-
-const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
-root.render(parent);
+const root = createRoot(document.getElementById("root"));
+root.render(<HeaderComponent />);

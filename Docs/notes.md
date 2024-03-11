@@ -27,3 +27,13 @@ caret and tilde in package.json
 - HTTPs
 - Tree Shaking (removed unused code)
 -  Different dev and prod bundles
+
+# React and JSX
+- const heading = React.createElement("h1", {id: "heading"}, "Namaste React")
+- const jsxheading = <h1 id="heading">Namaste React</h1>
+- the 1st and 2nd points here are equivalent, they are the same thing. You can log both these variables to confirm that.
+- babel converts jsx to a code that react or browsers can understand (transpile)
+- JSX =>  Babel transpiles it to React.createElement => ReactElement - JS Object => HTMLElement(render)
+ 
+ # React Components
+ - There are 2 types ----------- 1. Class Based Components (OLD) 2. Functional Components (NEW)
