@@ -1,0 +1,25 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "learning react",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leviackerman05/react-zen.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Priyansh Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leviackerman05/react-zen/issues"
+  },
+  "homepage": "https://github.com/leviackerman05/react-zen#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
