@@ -1,5 +1,62 @@
-#heading {
-  color: red;
-  border: 2px solid #000;
+.header {
+  border: 1px solid #000;
+  justify-content: space-between;
+  display: flex;
+}
+
+.logo {
+  width: 100px;
+}
+
+.textarea {
+  width: 70%;
+  margin-top: 10px;
+}
+
+.search-container {
+  align-items: center;
+  display: flex;
+}
+
+.search-button {
+  background-color: #dcecdf;
+  border: .5px solid gray;
+  border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  margin-top: 8px;
+  margin-left: 10px;
+}
+
+.res-card {
+  background: #f0f0f0;
+  width: 200px;
+  margin: 10px 5px;
+  padding: 5px;
+}
+
+.res-container:hover {
+  cursor: pointer;
+  border: 1px solid gray;
+}
+
+.res-logo {
+  width: 200px;
+}
+
+.body-container {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.nav-items > ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-items > ul > li {
+  margin: 10px;
+  padding: 10px;
+  font-size: 18px;
 }
 /*# sourceMappingURL=index.1303bb05.css.map */

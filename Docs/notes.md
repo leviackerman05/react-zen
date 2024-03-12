@@ -42,3 +42,7 @@
 
 - There are 2 types ----------- 1. Class Based Components (OLD) 2. Functional Components (NEW)
 - done upto video 3
+
+# FE System Design Interview
+
+- Swiggy has config driven UI
