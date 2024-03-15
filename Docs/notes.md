@@ -46,3 +46,9 @@
 # FE System Design Interview
 
 - Swiggy has config driven UI
+
+# Rendering Components
+
+- Every same level component needs to have a unique key otherwise let's say a new component is added react will not know where to add that component and hence react will clean the parent container and re-render all the other components also. So to optimise this we need to pass a unique key so react would know where to insert the new component and hence not only render that one and not re-render all the others as well.
+
+- You should'nt use index as keys since the order or items might change. (Mentioned in the React Docs). Only use index if you don't have any actual keys.
