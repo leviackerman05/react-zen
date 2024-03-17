@@ -76,3 +76,4 @@
 # useEffect Hook
 
 - This hook is called as soon as the component has been rendered. So basically if you have to do something after rendering the component then you have to write it in useEffect hook.
+  Example: If you want to make an api call after some of the elements has been loaded and show a skeleton meanwhile the call is being made useEffect is used.
