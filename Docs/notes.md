@@ -52,3 +52,23 @@
 - Every same level component needs to have a unique key otherwise let's say a new component is added react will not know where to add that component and hence react will clean the parent container and re-render all the other components also. So to optimise this we need to pass a unique key so react would know where to insert the new component and hence not only render that one and not re-render all the others as well.
 
 - You should'nt use index as keys since the order or items might change. (Mentioned in the React Docs). Only use index if you don't have any actual keys.
+
+# React Hooks
+
+- Hooks are nothing but javascript utility functions which gives us access to super powerful state variables inside of react.
+
+- useState, React will find a difference in virtual DOM and re-render the component is the state variable changes.
+
+- Reconciliation Algorithm aka (React Fiber)
+
+- Virtual DOM is a javascript representation of the actual DOM.
+
+- React basically creates a virtual dom anytime the state variable changes and then the Diff Algorith(Reconciliation Algoritm aka React Fiber) finds out the difference between updated virtual DOM and the older virtual dom.
+  Example: Say you have 7 Restaurant Card (Old Virtual DOM) and then you pressed the show top restaurants so now the UI has 3 Restaurant Card (Updated Virtual DOM), the diff algorithm will find the difference between the 2 virtual DOM's, what's the difference here from 7 Cards to 3 Cards so the total difference is of 4 nodes, it'll then actually update the DOM on every render cycle.
+
+- Finding out the difference between 2 HTML files is tough and slow, and finding out the difference between 2 objects is fast and hence react is fast and optimised.
+
+# Why React is Fast
+
+- Because it has a virtual dom, it has a diff algoritm that looks for changes in the virtual dom.
+- because it can manipulate the dom efficiently, it can find out the difference and update the UI.
