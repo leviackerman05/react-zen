@@ -53,7 +53,7 @@
 
 - You should'nt use index as keys since the order or items might change. (Mentioned in the React Docs). Only use index if you don't have any actual keys.
 
-# React Hooks
+# React Render Cycles and Hooks
 
 - Hooks are nothing but javascript utility functions which gives us access to super powerful state variables inside of react.
 
@@ -72,3 +72,7 @@
 
 - Because it has a virtual dom, it has a diff algoritm that looks for changes in the virtual dom.
 - because it can manipulate the dom efficiently, it can find out the difference and update the UI.
+
+# useEffect Hook
+
+- This hook is called as soon as the component has been rendered. So basically if you have to do something after rendering the component then you have to write it in useEffect hook.
